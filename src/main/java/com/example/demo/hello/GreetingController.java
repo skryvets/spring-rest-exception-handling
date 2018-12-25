@@ -13,7 +13,7 @@ public class GreetingController {
     private static final String template = "Hello, %s!";
 
     @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value="name") String name) {
+    public Greeting greeting(@RequestParam String name) {
         return new Greeting(String.format(template, name));
     }
 }
