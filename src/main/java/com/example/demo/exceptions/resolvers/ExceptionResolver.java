@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 
 @RestControllerAdvice
-public class GlobalExceptionResolver {
+public class ExceptionResolver {
 
     @ExceptionHandler(Exception.class)
     public HashMap<String, String> handleException(HttpServletRequest request, Exception e) {
